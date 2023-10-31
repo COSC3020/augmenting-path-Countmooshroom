@@ -32,3 +32,7 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+## Answer
+
+The worst case would be a graph that is mostly connected but finds the path on the last possible search.  Just like a regular graph search, it would traverse each edge once and just backtracks to a previous node if it hits a dead end.  Every edge will be searched once, and every node will be searched once.  Therefore, the worst-case time complexity is $\Theta(|V| + |E|)$.
